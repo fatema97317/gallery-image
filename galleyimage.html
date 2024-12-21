@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallerystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="slide">
+            <div class="item" style="background-image: url(Screenshot_۲۰۲۴۰۶۲۴_۱۹۱۳۲۳_Chrome.jpg);">
+                <div class="content">
+                    <div class="name">newyourk</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis null</div>
+                    <button>see more</button>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(Screenshot_۲۰۲۴۰۶۲۴_۱۹۱۲۰۴_Chrome.jpg);">
+                <div class="content">
+                    <div class="name">Escatland</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis null</div>
+                    <button>see more</button>
+                </div>
+            </div>
+
+
+            <div class="item" style="background-image: url(Screenshot_۲۰۲۴۰۶۲۴_۱۹۱۴۳۰_Chrome.jpg);">
+                <div class="content">
+                    <div class="name">london</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis null</div>
+                    <button>see more</button>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(Screenshot_۲۰۲۴۰۶۲۴_۱۹۰۱۲۵_Chrome.jpg);">
+                <div class="content">
+                    <div class="name">paris</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis null</div>
+                    <button>see more</button>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(IMG_20240703_181604_082.jpg);">
+                <div class="content">
+                    <div class="name">Sanfrancisco</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis null</div>
+                    <button>see more</button>
+                </div>
+            </div>
+            
+            <div class="item" style="background-image: url(Screenshot_۲۰۲۴۰۶۲۴_۱۹۲۷۲۱_Chrome.jpg);">
+                <div class="content">
+                    <div class="name">newsland</div>
+                    <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis null</div>
+                    <button>see more</button>
+                </div>
+            </div>
+          
+
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-duotone fa-solid fa-square-left"></i></button>
+        <button class="next"><i class="fa-duotone fa-solid fa-square-right"></i></button>
+    </div>
+    </div>
+
+
+    <script>
+
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click' , function(){
+            let item = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(item[0])
+        })
+
+        prev.addEventListener('click' , function(){
+            let item = document.querySelectorAll('.item');
+            document.querySelector('.slide').prepend(item[item.length - 1])
+        })
+    </script>
+</body>
+</html>
